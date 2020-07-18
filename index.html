@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Vehiculo.js"></script>
+    <script src="./Auto.js"></script>
+    <script src="./Camioneta.js"></script>
+    <script src="./FuncionesHTML.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>2do Parcial Lucas Marino</title>
+</head>
+<body>
+
+    <div class="VntPrincipal" id="VntPrincipal">
+        <button class="btnAlta" id="btnAlta">Alta Vehiculo</button> </br>
+
+        <h1 class="lblTitulos">Filtros</h1>
+
+        <label>Filtrar por: </label>
+        <select name="slcFiltro" id="slcFiltro">
+            <option value="0"></option>
+            <option value="Auto">Auto</option> 
+            <option value="Camioneta">Camioneta</option>
+        </select>
+    </br></br>
+        <label>Promedio de precio: </label>
+        <input type="text" id="txtPromedio" size="5" disabled>
+
+
+        <button class="btnCalcularProm" id="btnCalcularProm">Calcular Promedio</button> </br></br>
+        
+        <h3>CAMPOS MOSTRADOS</h3>
+        <label>(Tildar los campos a mostrar)</label> </br>
+
+        <input type="checkbox" id="chkID" checked> <label>ID</label>
+        <input type="checkbox" id="chkMarca" checked> <label>Marca</label>
+        <input type="checkbox" id="chkModelo" checked> <label>Modelo</label>
+        <input type="checkbox" id="chkPrecio" checked> <label>Precio</label></br></br>
+
+        <h1>Listado de Vehiculos</h1>
+        <table id="Tabla">
+            <thead>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+                <th>Acción</th>
+            </thead>
+            <tbody id="cuerpo">
+            </tbody>
+        </table>
+    </div>
+
+    <div class="VntAlta" id="VntAlta" hidden="true">
+        <h3>Alta Vehiculo</h3></br>
+        <label>ID: </label>
+        <input type="text" id="txtAgregarID" disabled></br>
+        <label>Marca: </label>
+        <input type="text" id="txtAgregarMarca"></br>
+        <label>Modelo: </label>
+        <input type="text" id="txtAgregarModelo"></br>
+        <label>Precio: </label>
+        <input type="number" min="0" id="txtAgregarPrecio"></br>
+        <label>Tipo de Vehiculo: </label>
+        <select name="slcAgregar" id="slcAgregar">
+            <option value="0"></option>
+            <option value="Auto">Auto</option> 
+            <option value="Camioneta">Camioneta</option>
+        </select></br>
+        <label hidden="true" id="lblAgregarCantPuertas">Cantidad de Puertas: </label>
+        <input hidden="true" type="number" min="0" max="5" id="txtAgregarCantPuertas"></br>
+        <label hidden="true" id="lblAgregarEs4x4">Es 4x4: </label>
+        <input hidden="true" type="checkbox" id="chkAgregarEs4x4"></br>
+        <button class="btnCancelarAgregar" id="btnCancelarAgregar" >Cancelar</button>
+        <button class="btnAlta" id="btnAgregar" >Agregar</button>
+    </div>
+
+</body>
+</html>

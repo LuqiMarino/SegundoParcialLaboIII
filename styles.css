@@ -1,0 +1,61 @@
+table {
+    position: relative;
+    width: 90%;
+    border: 1px solid black;
+}
+
+th, td {    
+    text-align: left;
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+th{
+     color: Red;
+     background-color: black;
+     width: 20%;
+}
+
+td{
+    width: 10%;
+    background-color: grey;
+}
+
+.btnCancelarAgregar{
+    background-color: red;
+    border: red;
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
+}
+
+.btnAlta{
+    background-color: green;
+    border: green;
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
+}
+
+.VntAlta{
+   position: absolute;
+   width: max-content;
+   padding: 15px;
+   top: 25%;
+   left: 35%;
+   border-radius: 5px;
+   border:1px solid black;
+   background-color: lightseagreen;
+}
+
+h1{
+    text-align: center;
+}
+
+.btnCalcularProm{
+    background-color: orchid;
+    border: orchid;
+    border-radius: 5px;
+    height: 20px;
+    width: 130px;
+}
